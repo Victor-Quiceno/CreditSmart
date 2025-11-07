@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreditSmart</title>
+    <title>CreditSmart-SimularCredito</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -35,14 +35,42 @@
 
     <div class="container">
         <header class="hero-content">
-
-            <h1>¡Bienvenido a CreditSmart!</h1>
-            <p>Tu aliado confiable para soluciones de crédito inteligentes y accesibles.</p>
+            <h1>Simular Crédito</h1>
+            <p>Calcula tus cuotas mensuales y planifica tu futuro financiero con nuestro simulador de crédito fácil de
+                usar.</p>
         </header>
 
+        <section class="simulador">
+            <h2>Busca tu Crédito</h2>
+            <form action="">
+                <label for="nombre">Buscar por Nombre:</label>
+                <input type="text" id="nombre" placeholder="Crédito Personal">
 
-        <main>
-            <h2>Nuestros Productos Crediticios</h2>
+                <label for="rango-monto">Rango del Monto:</label>
+                <select id="rango-monto">
+                    <option value="">Todos los montos</option>
+                    <option value="Bajo">Hasta $50M</option>
+                    <option value="Medio">$50M - $200M</option>
+                    <option value="Elevado">$200M - $500M</option>
+                    <option value="Alto">Más de $500M</option>
+                </select>
+
+                <label for="interes">Rango de Interés:</label>
+                <select id="interes">
+                    <option value="">Todos los intereses</option>
+                    <option value="Bajo">10% EA - 20% EA</option>
+                    <option value="Medio">20% EA - 30% EA</option>
+                    <option value="Elevado">Mayor a 30% EA</option>
+                </select>
+
+                <button type="button" class="boton-limpiar">Limpiar Filtros</button>
+            </form>
+        </section>
+
+        <section class="resultados">
+            <h2>Resultados</h2>
+            <h3 id="h3-simular-credito">Todos los productos:</h3> <!--Le puse un id a este h3 para diferenciarlo de los demás-->
+
             <div class="cards">
 
                 <article>
@@ -99,10 +127,8 @@
                     <a href="SolicitarCredito.html" class="boton-card">Solicitar</a>
                 </article>
             </div>
-
-        </main>
+        </section>
     </div>
-
 </body>
 
 </html>
