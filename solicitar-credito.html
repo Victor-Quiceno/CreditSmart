@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreditSmart-SolicitarCredito</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo-container">
+            <a class="logo" href="Index.html">
+                <img src="Images/logo-white.png" alt="Logo CreditSmart">
+                CreditSmart</a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="Index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="SimularCredito.html">Simular Crédito</a>
+                </li>
+
+                <li>
+                    <a href="SolicitarCredito.html">Solicitar Crédito</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Solicitar Crédito</h1>
+        <p>Completa el formulario para iniciar tu solicitud</p>
+
+        <form action="">
+            <div class="seccion-formulario">
+
+                <h2>Datos Personales</h2>
+
+                <label for="nombres">Nombre Completo:</label>
+                <input type="text" id="nombres" placeholder="Juan Carlos Perez Perdomo" required>
+
+                <label for="tipo-documento">Tipo de Documento:</label>
+                <select id="tipo-documento" required>
+                    <option value="" disabled selected>Seleccionar tipo de documento</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="NIT">NIT</option>
+                </select>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="" required>
+
+                <h2>Datos Laborales</h2>
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" placeholder="Nombre de la empresa" required>
+
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" placeholder="Cargo que desempeña" required>
+
+                <label for="ingresos">Ingresos Mensuales ($):</label>
+                <input type="number" id="ingresos" min="0" step="10000" placeholder="Ingrese sus ingresos mensuales"
+                    required>
+
+
+                <h2>Datos del Crédito</h2>
+
+                <label for="credito-select">Seleccione su Crédito:</label>
+                <select id="credito-select" required>
+                    <option value="" disabled selected>Selecciona el tipo de crédito</option>
+                    <option value="personal">Crédito Personal</option>
+                    <option value="libre-inversion">Crédito de Libre Inversión</option>
+                    <option value="vehiculo">Crédito de Vehículo</option>
+                    <option value="vivienda">Crédito de Vivienda</option>
+                    <option value="comercial">Crédito Comercial</option>
+                    <option value="hipotecario">Crédito Hipotecario</option>
+                </select>
+
+                <label for="monto-credito">Monto:</label>
+                <input type="number" id="monto-credito" required>
+
+                <label for="plazo-credito">Plazo:</label>
+                <input type="number" id="plazo-credito" required>
+            </div>
+
+            <div class="botones-formulario">
+
+                <button type="submit">Enviar Solicitud</button>
+                <button type="reset">Limpiar Formulario</button>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+
+<footer class=footer>
+    <p>&copy 2024 CreditSmart - FinTech Solutions S.A.S</p>
+    <p>Todos los derechos reservados.</p>
+</footer>
+
+</html>
