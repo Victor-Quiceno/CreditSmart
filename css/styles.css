@@ -269,3 +269,114 @@ main h2 {
     width: 100%;
     margin-top: 2rem;
 }
+
+
+/*---------------------------------------------------------
+    PÁGINA DE SOLICITAR CRÉDITO
+-----------------------------------------------------------*/
+
+.container > h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 2rem 0 1rem;    
+}
+
+.container > p{
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+/*Contenedor del formulario*/
+form.solicitar-credito-form {
+    display: flex;
+    flex-direction: column;
+    gap:1.8rem;
+    margin-bottom: 2rem;
+}
+
+/*Estilo de cada sección del formulario estilo card*/
+.formulario-personales,
+.formulario-laborales,
+.formulario-credito {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 1.8rem;
+}
+
+/*Títulos de sección*/
+.formulario-personales h2,
+.formulario-laborales h2,
+.formulario-credito h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid #ecf0f1; /*Text-align: center???*/
+    padding-bottom: 0.6rem;
+}
+
+/*Etiquetas y campos del formulario*/
+form.solicitar-credito-form label {
+    width: 100%; /*Asegura que las etiquetas ocupen todo el ancho disponible*/
+    margin: 1rem 0.05rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+form.solicitar-credito-form input,
+form.solicitar-credito-form select {
+    width: 100%;
+    padding:0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition:border-color 0.3s, box-shadow 0.3s;
+}
+
+form.solicitar-credito-form input:focus,
+form.solicitar-credito-form select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/*Botones del formulario*/
+.botones-formulario {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.botones-formulario button {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botones-formulario .boton-enviar {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.botones-formulario .boton-enviar:hover {
+    background-color: #27ae60;
+}
+
+.botones-formulario .boton-limpiar {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.botones-formulario .boton-limpiar:hover {
+    background-color: #7f8c8d;
+}
