@@ -10,11 +10,22 @@
 
 <body>
     <nav>
+
+
         <div class="logo-container">
             <a class="logo" href="Index.html">
-                <img src="Images/logo-white.png" alt="Logo CreditSmart">
+                <img src="Images/logo.png" alt="Logo CreditSmart">
                 CreditSmart</a>
         </div>
+
+        <!--Este primer apartado es para hacer un menú hamburguesa responsive, 
+        como no estoy utilizando bootstrap entonces es bastante artesanal y algo enredado-->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
         <div class="menu">
             <ul>
@@ -33,10 +44,14 @@
         </div>
     </nav>
 
-    <div class="container">
-
+    <header class="hero-content">
         <h1>Solicitar Crédito</h1>
         <p>Completa el formulario para iniciar tu solicitud</p>
+    </header>
+
+    <div class="container">
+
+
 
         <form action="" class="solicitar-credito-form">
             <div class="formulario-personales">
@@ -55,10 +70,12 @@
                 </select>
 
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="ej: ejemplo@gmail.com" required autocomplete="email">
+                <input type="email" id="email" name="email" placeholder="ej: ejemplo@gmail.com" required
+                    autocomplete="email">
 
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="ej: 3121122112" required autocomplete="tel">
+                <input type="tel" id="telefono" name="telefono" placeholder="ej: 3121122112" required
+                    autocomplete="tel">
             </div>
 
             <div class="formulario-laborales">
@@ -70,8 +87,8 @@
                 <input type="text" id="cargo" name="cargo" placeholder="Cargo que desempeña" required>
 
                 <label for="ingresos">Ingresos Mensuales ($):</label>
-                <input type="number" id="ingresos" name="ingresos" min="0" step="10000" placeholder="Ingrese sus ingresos mensuales"
-                    required>
+                <input type="number" id="ingresos" name="ingresos" min="0" step="10000"
+                    placeholder="Ingrese sus ingresos mensuales" required>
             </div>
 
             <div class="formulario-credito">
