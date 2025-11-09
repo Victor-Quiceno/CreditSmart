@@ -9,6 +9,7 @@ La plataforma hace uso de recursos elegantes, minimalistas y concisos, dejando d
 
 ## ESTRUCTURA DE LOS ARCHIVOS
 
+```plaintext
 creditsmart/
 ├── css/
 │ └── styles.css
@@ -31,6 +32,7 @@ creditsmart/
 ├── README.md
 ├── simular-credito.html
 └── solicitar-credito.html
+```
 
 ## INSTRUCCIONES PARA EJECUTAR EL PROYECTO
 Abrir el archivo index en cualquier navegador de su preferencia.
